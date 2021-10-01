@@ -1,0 +1,14 @@
+{
+  "employee": [
+    {
+      "empcode": "00001",
+      "empname": "testemp",
+      "empdeg": "developer"
+    },
+    {
+      "empcode": "00002",
+      "empname": "testemp1",
+      "empdeg": "lead"
+    }
+  ]
+}

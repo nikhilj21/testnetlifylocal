@@ -1,0 +1,16 @@
+<html>
+<body>
+<script type="text/javascript" src="jquery.js"> </script>
+<script>
+$.getJSON('page3.json', function(data) {         
+    $('#title').html(data.title);
+	$('#desc').html(data.description);
+	$('#image').html('<img src="image/'+data.image+'" alt="client_logo_14">');
+	
+});
+</script>
+<h1 id="title"></h1>
+<h3 id = "desc"></h3>
+<div id="image"></div>
+</body>
+</html>

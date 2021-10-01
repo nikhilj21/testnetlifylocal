@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+local_backend: true
+collections:
+  - name: "pages"
+    label: "Pages"
+    extension: "json"
+    files:
+      - label: "Page1"
+        name: "page1"
+        file: "people.json"
+        fields:
+          - label: "Person"
+            name: "person"
+            widget: "list"
+            fields:
+              - {label: "FirstName", name: "firstName", widget: "string"}
+              - {label: "LastName", name: "lastName", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+      - label: "Page2"
+        name: "page2"
+        file: "employee.json"
+        fields:
+          - label: "Employee"
+            name: "employee"
+            widget: "list"
+            fields:
+              - {label: "Employee Code", name: "empcode", widget: "string"}
+              - {label: "Employee Name", name: "empname", widget: "string"}
+              - {label: "Designation", name: "empdeg", widget: "string"}
+              
+      - label: "Page3"
+        name: "page3"
+        file: "page3.json"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Description"
+            name: "description"
+            widget: "string"
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            media_library:
+             config:
+              multiple: true
+media_folder: image
+public_folder: ""
